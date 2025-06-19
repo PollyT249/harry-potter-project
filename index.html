@@ -11,9 +11,34 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="welcome-title">Welcome to Harry Potter World!</h1>
-          <button class="show-btn">Show all characters</button>
+          <button id="toggleButton" class="show-btn">
+            Show all characters
+          </button>
+        </div>
+      </section>
+      <section id="charactersSection" class="characters-section accordion">
+        <div class="container">
+          <div class="grid grid-3-columns">
+            <div>
+              <img src="./images/students.jpg" alt="" class="img-responsive" />
+              <button id="students-btn" class="btn">Hogwarts Students</button>
+            </div>
+            <div>
+              <img src="./images/workers.jpg" alt="" class="img-responsive" />
+              <button id="workers-btn" class="btn">Hogwarts Workers</button>
+            </div>
+            <div>
+              <img
+                src="./images/other-characters.jpg"
+                alt=""
+                class="img-responsive"
+              />
+              <button id="characters-btn" class="btn">Characters</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
