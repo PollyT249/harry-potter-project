@@ -223,7 +223,8 @@ button:hover {
 
 .home-link {
   text-align: start;
+  margin-left: 20px;
   font-size: 28px;
   text-decoration: none;
-  color: #ee9dee;
+  color: #9e7238;
 }

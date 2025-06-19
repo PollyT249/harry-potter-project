@@ -2,7 +2,7 @@ const apiUrl = "https://hp-api.onrender.com/api/characters/staff";
 const cardContainer = document.querySelector("#card-container");
 
 axios.get(apiUrl).then((response) => {
-  const staff = response.data.slice(0, 8);
+  const staff = response.data.slice(0, 12);
   console.log(response);
   const cardsHtml = staff
     .map(
@@ -10,7 +10,9 @@ axios.get(apiUrl).then((response) => {
     <div class="card-container">
       <div class="card">
         <div class="card-front">
-          <img src="${staff.image || "placeholder.jpg"}" alt="${staff.name}" />
+          <img src="${staff.image}" alt="${
+        staff.name
+      }" onerror="this.onerror=null;this.src='./images/placeholder.jpg';"/>
         </div>
         <div class="card-back">
           <p>Name: <span> ${staff.name}</span></p>
