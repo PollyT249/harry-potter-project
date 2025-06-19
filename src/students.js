@@ -2,7 +2,7 @@ const apiUrl = "https://hp-api.onrender.com/api/characters/students";
 const cardContainer = document.querySelector("#card-container");
 
 axios.get(apiUrl).then((response) => {
-  const students = response.data.slice(0, 8); // first 8 characters
+  const students = response.data.slice(0, 8);
   console.log(response);
   const cardsHtml = students
     .map(
