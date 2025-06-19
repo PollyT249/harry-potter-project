@@ -9,6 +9,6 @@ button.addEventListener("click", () => {
   if (isVisible) {
     setTimeout(() => {
       section.scrollIntoView({ behavior: "smooth" });
-    }, 300);
+    }, 400);
   }
 });

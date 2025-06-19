@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Harry Potter</title>
   </head>
@@ -21,11 +27,13 @@
           <div class="grid grid-3-columns">
             <div>
               <img src="./images/students.jpg" alt="" class="img-responsive" />
-              <button id="students-btn" class="btn">Hogwarts Students</button>
+              <button id="students-btn" class="btn">
+                <a href="/students.html" class="btn-link">Hogwarts Students</a>
+              </button>
             </div>
             <div>
               <img src="./images/workers.jpg" alt="" class="img-responsive" />
-              <button id="workers-btn" class="btn">Hogwarts Workers</button>
+              <button id="staff-btn" class="btn">Hogwarts Staff</button>
             </div>
             <div>
               <img
@@ -33,12 +41,14 @@
                 alt=""
                 class="img-responsive"
               />
-              <button id="characters-btn" class="btn">Characters</button>
+              <button id="characters-btn" class="btn">
+                Characters in a House
+              </button>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <script src="index.js"></script>
+    <script src="./src/index.js"></script>
   </body>
 </html>
