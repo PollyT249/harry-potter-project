@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Hogwarts Students</title>
+  </head>
+  <body>
+    <main>
+      <section class="section">
+        <a href="/" class="home-link">Home</a>
+        <div class="container">
+          <h1 class="title">Hogwarts Students</h1>
+          <div class="house-filters">
+            <button data-house="Gryffindor" class="filter-btn">
+              <span class="flex-span">
+                <svg class="house-icon" width="35" height="38">
+                  <use xlink:href="./images/gryffindor.svg"></use>
+                </svg>
+                Gryffindor</span
+              >
+            </button>
+            <button data-house="Slytherin" class="filter-btn">
+              <span class="flex-span">
+                <svg class="house-icon" width="35" height="38">
+                  <use xlink:href="./images/slytherin.svg"></use>
+                </svg>
+                Slytherin</span
+              >
+            </button>
+            <button data-house="Ravenclaw" class="filter-btn">
+              <span class="flex-span">
+                <svg class="house-icon" width="35" height="38">
+                  <use xlink:href="./images/ravenclaw.svg"></use>
+                </svg>
+                Ravenclaw</span
+              >
+            </button>
+            <button data-house="Hufflepuff" class="filter-btn">
+              <span class="flex-span">
+                <svg class="house-icon" width="35" height="38">
+                  <use xlink:href="./images/hufflepuff.svg"></use>
+                </svg>
+                Hufflepuff</span
+              >
+            </button>
+          </div>
+          <div id="card-container" class="cards-grid"></div>
+        </div>
+      </section>
+    </main>
+    <script src="./src/filter.js"></script>
+  </body>
+</html>
